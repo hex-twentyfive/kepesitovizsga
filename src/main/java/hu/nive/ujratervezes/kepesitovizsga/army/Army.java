@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Army {
 
+
     private List<MilitaryUnit> army = new ArrayList<>();
 
 
@@ -12,12 +13,14 @@ public class Army {
         army.add(militaryUnit);
     }
 
+
     public void damageAll(int damage) {
         for (MilitaryUnit e : army) {
             e.sufferDamage(damage);
         }
         removesIncapacitatedAndDead();
     }
+
 
     private void removesIncapacitatedAndDead() {
         List<MilitaryUnit> removedArmy = new ArrayList<>();
@@ -29,6 +32,7 @@ public class Army {
         army = removedArmy;
     }
 
+
     public int getArmyDamage() {
         int armyDamageSum = 0;
         for (MilitaryUnit e : army) {
@@ -36,6 +40,7 @@ public class Army {
         }
         return armyDamageSum;
     }
+
 
     public int getArmySize() {
         return army.size();

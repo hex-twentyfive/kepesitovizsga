@@ -2,11 +2,13 @@ package hu.nive.ujratervezes.kepesitovizsga.army;
 
 public abstract class MilitaryUnit {
 
+
     private int hitPoints;
 
     private int attackDamage;
 
     private boolean hasArmor;
+
 
     public MilitaryUnit(int hitPoints, int attackDamage, boolean hasArmor) {
         this.hitPoints = hitPoints;
@@ -52,5 +54,6 @@ public abstract class MilitaryUnit {
     public void setHasArmor(boolean hasArmor) {
         this.hasArmor = hasArmor;
     }
+
 
 }
