@@ -18,6 +18,7 @@ public class AddDigits {
         String[] parts = filtered.split("");
 
         int digitSum = 0;
+
         for(String e: parts) {
             digitSum += Integer.parseInt(e);
         }
@@ -26,7 +27,7 @@ public class AddDigits {
     }
 
     private String filterString(String input) {
-        String filteredString = input.replaceAll("[\\D]","");
+        String filteredString = input.replaceAll("[\\D]","");       //Csak a digit karakterek maradnak benne.
         return filteredString;
     }
 
